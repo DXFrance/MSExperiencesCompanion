@@ -7,14 +7,14 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace RecommandtionsApi
+namespace RecommandationsApi
 {
     public class Program
     {
         // Entry point for the application.
         public static void Main(string[] args)
         {
-            ServiceRuntime.RegisterServiceAsync("RecommandtionsApiType", context => new WebHostingService(context, "ServiceEndpoint")).GetAwaiter().GetResult();
+            ServiceRuntime.RegisterServiceAsync("RecommandationsApiType", context => new WebHostingService(context, "ServiceEndpoint")).GetAwaiter().GetResult();
 
             Thread.Sleep(Timeout.Infinite);
         }
