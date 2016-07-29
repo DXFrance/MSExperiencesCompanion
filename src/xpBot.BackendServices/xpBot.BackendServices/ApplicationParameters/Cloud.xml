@@ -3,7 +3,6 @@
   <Parameters>
     <Parameter Name="RecommandationsApi_InstanceCount" Value="-1" />
     <Parameter Name="RatingApi_InstanceCount" Value="-1" />
-    <Parameter Name="SpeakersApi_InstanceCount" Value="-1" />
     <Parameter Name="ScheduleApi_InstanceCount" Value="-1" />
   </Parameters>
 </Application>

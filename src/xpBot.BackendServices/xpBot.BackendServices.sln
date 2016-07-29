@@ -7,8 +7,6 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "xpBot.BackendServices", "xp
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ScheduleApi", "ScheduleApi\ScheduleApi.xproj", "{AE819EFE-6C83-4880-9BCD-01E9D19EF662}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SpeakersApi", "SpeakersApi\SpeakersApi.xproj", "{952C497A-F613-4BE8-8B4F-F1CF78064059}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RatingApi", "RatingApi\RatingApi.xproj", "{D5CBD113-FB21-434D-B28C-18CE79E01A8A}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RecommandationsApi", "RecommandationsApi\RecommandationsApi.xproj", "{3D27CCA2-713A-408B-9692-3B6C27C67D08}"
@@ -39,14 +37,6 @@ Global
 		{AE819EFE-6C83-4880-9BCD-01E9D19EF662}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE819EFE-6C83-4880-9BCD-01E9D19EF662}.Release|x64.ActiveCfg = Release|Any CPU
 		{AE819EFE-6C83-4880-9BCD-01E9D19EF662}.Release|x64.Build.0 = Release|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Debug|x64.Build.0 = Debug|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Release|Any CPU.Build.0 = Release|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Release|x64.ActiveCfg = Release|Any CPU
-		{952C497A-F613-4BE8-8B4F-F1CF78064059}.Release|x64.Build.0 = Release|Any CPU
 		{D5CBD113-FB21-434D-B28C-18CE79E01A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5CBD113-FB21-434D-B28C-18CE79E01A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5CBD113-FB21-434D-B28C-18CE79E01A8A}.Debug|x64.ActiveCfg = Debug|Any CPU
