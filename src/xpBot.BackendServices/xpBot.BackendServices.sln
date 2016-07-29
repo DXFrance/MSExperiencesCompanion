@@ -11,7 +11,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SpeakersApi", "SpeakersApi\
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RatingApi", "RatingApi\RatingApi.xproj", "{D5CBD113-FB21-434D-B28C-18CE79E01A8A}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RecommandtionsApi", "RecommandtionsApi\RecommandtionsApi.xproj", "{3D27CCA2-713A-408B-9692-3B6C27C67D08}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RecommandationsApi", "RecommandationsApi\RecommandationsApi.xproj", "{3D27CCA2-713A-408B-9692-3B6C27C67D08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

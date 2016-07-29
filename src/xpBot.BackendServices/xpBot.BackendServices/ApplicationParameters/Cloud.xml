@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/xpBot.BackendServices" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
-    <Parameter Name="RecommandtionsApi_InstanceCount" Value="-1" />
+    <Parameter Name="RecommandationsApi_InstanceCount" Value="-1" />
     <Parameter Name="RatingApi_InstanceCount" Value="-1" />
     <Parameter Name="SpeakersApi_InstanceCount" Value="-1" />
     <Parameter Name="ScheduleApi_InstanceCount" Value="-1" />

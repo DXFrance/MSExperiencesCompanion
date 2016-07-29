@@ -28,7 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RatingApi\RatingApi.xproj" />
-    <ProjectReference Include="..\RecommandtionsApi\RecommandtionsApi.xproj" />
+    <ProjectReference Include="..\RecommandationsApi\RecommandationsApi.xproj" />
     <ProjectReference Include="..\ScheduleApi\ScheduleApi.xproj" />
     <ProjectReference Include="..\SpeakersApi\SpeakersApi.xproj" />
   </ItemGroup>
