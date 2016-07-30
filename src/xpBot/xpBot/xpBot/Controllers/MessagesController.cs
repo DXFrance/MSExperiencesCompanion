@@ -9,6 +9,7 @@ using Microsoft.Bot.Connector;
 using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
 using xpBot.Dialogs;
+using System.Diagnostics;
 
 namespace xpBot
 {
@@ -29,9 +30,9 @@ namespace xpBot
                 {
                     await Conversation.SendAsync(activity, () => new ExperiencesDialog());
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-
+                    Debug.WriteLine(ex.Message);
                 }
             }
             else

@@ -39,6 +39,8 @@ namespace ScheduleApi
                 opt.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
             });
 
+            services.AddCors();
+
             // Inject an implementation of ISwaggerProvider with defaulted settings applied
             services.AddSwaggerGen();
         }
@@ -52,6 +54,11 @@ namespace ScheduleApi
             loggerFactory.AddDebug();
 
             app.UseMvc();
+
+            app.UseCors(builder =>
+                builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+            );
 
             // Enable middleware to serve generated Swagger as a JSON endpoint
             app.UseSwagger();
