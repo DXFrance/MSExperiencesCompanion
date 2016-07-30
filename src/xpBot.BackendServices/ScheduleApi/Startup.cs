@@ -33,7 +33,11 @@ namespace ScheduleApi
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(opt =>
+            {
+                opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                opt.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+            });
 
             services.AddCors();
 
