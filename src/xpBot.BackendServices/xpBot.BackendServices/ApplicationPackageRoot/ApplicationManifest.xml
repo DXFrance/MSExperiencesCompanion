@@ -3,7 +3,6 @@
   <Parameters>
     <Parameter Name="RecommandationsApi_InstanceCount" DefaultValue="-1" />
     <Parameter Name="RatingApi_InstanceCount" DefaultValue="-1" />
-    <Parameter Name="SpeakersApi_InstanceCount" DefaultValue="-1" />
     <Parameter Name="ScheduleApi_InstanceCount" DefaultValue="-1" />
   </Parameters>
   <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
@@ -15,10 +14,6 @@
   </ServiceManifestImport>
   <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="RatingApiPkg" ServiceManifestVersion="1.0.0" />
-    <ConfigOverrides />
-  </ServiceManifestImport>
-  <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="SpeakersApiPkg" ServiceManifestVersion="1.0.0" />
     <ConfigOverrides />
   </ServiceManifestImport>
   <ServiceManifestImport>
@@ -38,11 +33,6 @@
     </Service>
     <Service Name="RatingApi">
       <StatelessService ServiceTypeName="RatingApiType" InstanceCount="[RatingApi_InstanceCount]">
-        <SingletonPartition />
-      </StatelessService>
-    </Service>
-    <Service Name="SpeakersApi">
-      <StatelessService ServiceTypeName="SpeakersApiType" InstanceCount="[SpeakersApi_InstanceCount]">
         <SingletonPartition />
       </StatelessService>
     </Service>
