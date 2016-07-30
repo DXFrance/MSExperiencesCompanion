@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace ScheduleApi.Controllers
 {
@@ -21,7 +22,6 @@ namespace ScheduleApi.Controllers
         {
             var sessions = await _dbContext.Sessions
                 .Include(s => s.SessionSpeakers)
-                    .ThenInclude(p => p.Speaker)
                 .OrderBy(s => s.Code)
                 .ToListAsync();
 
@@ -34,14 +34,13 @@ namespace ScheduleApi.Controllers
         {
             var session = await _dbContext.Sessions
                 .Include(s => s.SessionSpeakers)
-                    .ThenInclude(p => p.Speaker)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if(session == null)
             {
                 return new NotFoundResult();
             }
-
+            
             return Json(session);
         }
     }

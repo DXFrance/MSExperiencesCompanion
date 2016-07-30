@@ -20,7 +20,6 @@ namespace ScheduleApi.Controllers
         {
             var sessions = await _dbContext.Speakers
                 .Include(s => s.SessionSpeakers)
-                    .ThenInclude(p => p.Session)
                 .OrderBy(s => s.LastName)
                 .ToListAsync();
 
@@ -33,7 +32,6 @@ namespace ScheduleApi.Controllers
         {
             var session = await _dbContext.Speakers
                 .Include(s => s.SessionSpeakers)
-                    .ThenInclude(p => p.Session)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if(session == null)
