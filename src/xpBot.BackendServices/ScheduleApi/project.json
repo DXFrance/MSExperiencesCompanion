@@ -16,7 +16,8 @@
     "Microsoft.ServiceFabric.Data": "2.1.163",
     "Microsoft.ServiceFabric.Services": "2.1.163",
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
-    "Microsoft.AspNetCore.Diagnostics": "1.0.0"
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+    "Swashbuckle": "6.0.0-beta901"
   },
 
   "tools": {
