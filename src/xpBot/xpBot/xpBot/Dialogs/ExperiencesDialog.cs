@@ -12,6 +12,9 @@ namespace xpBot.Dialogs
     [LuisModel("f2ecc527-c521-4f5b-9e27-e30816d61888", "a48f97a5db7b4bc98da1c2bb11c473de")]
     public class ExperiencesDialog : LuisDialog<object>
     {
+        public const string Entity_Speaker_FirstName = "xpbot.speaker::firstname";
+        public const string Entity_Speaker_LastName = "xpbot.speaker::lastname";
+        
         [LuisIntent("")]
         public async Task None(IDialogContext context, LuisResult result)
         {
@@ -39,7 +42,19 @@ namespace xpBot.Dialogs
         [LuisIntent("xpbot.intent.speaker_details")]
         public async Task SpeakerDetails(IDialogContext context, LuisResult result)
         {
-            string message = $"speaker details";
+            EntityRecommendation firstName;
+            if (!result.TryFindEntity(Entity_Speaker_FirstName, out firstName))
+            {
+                firstName = new EntityRecommendation(type: Entity_Speaker_FirstName) { Entity = string.Empty };
+            }
+
+            EntityRecommendation lastName;
+            if (!result.TryFindEntity(Entity_Speaker_LastName, out lastName))
+            {
+                lastName = new EntityRecommendation(type: Entity_Speaker_LastName) { Entity = string.Empty };
+            }
+
+            string message = $"speaker details about {firstName.Entity} {lastName.Entity}";
             await context.PostAsync(message);
             context.Wait(MessageReceived);
         }
