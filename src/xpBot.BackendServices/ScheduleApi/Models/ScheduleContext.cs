@@ -74,12 +74,12 @@ namespace ScheduleApi.Models
             modelBuilder.Entity<SessionSpeaker>()
                 .HasOne(pt => pt.Speaker)
                 .WithMany(p => p.SessionSpeakers)
-                .HasForeignKey(pt => pt.SessionId);
+                .HasForeignKey(pt => pt.SpeakerId);
 
             modelBuilder.Entity<SessionSpeaker>()
                 .HasOne(pt => pt.Session)
                 .WithMany(t => t.SessionSpeakers)
-                .HasForeignKey(pt => pt.SpeakerId);
+                .HasForeignKey(pt => pt.SessionId);
 
             base.OnModelCreating(modelBuilder);
         }
