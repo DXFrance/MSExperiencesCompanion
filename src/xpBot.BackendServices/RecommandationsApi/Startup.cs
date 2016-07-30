@@ -41,6 +41,7 @@ namespace RecommandationsApi
 
             app.UseCors(builder => 
                 builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
                     .AllowAnyHeader()
             );
 

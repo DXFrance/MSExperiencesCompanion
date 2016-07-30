@@ -57,6 +57,7 @@ namespace ScheduleApi
 
             app.UseCors(builder =>
                 builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
                     .AllowAnyHeader()
             );
 
