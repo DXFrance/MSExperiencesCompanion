@@ -13,8 +13,6 @@ using System.Diagnostics;
 
 namespace xpBot
 {
-
-
     [BotAuthentication]
     public class MessagesController : ApiController
     {
